@@ -1,0 +1,19 @@
+{
+  "name": "novellum-framework",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Novellum-Framework/novellum-framework.git"
+  },
+  "author": "Andrii Kovalenko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Novellum-Framework/novellum-framework/issues"
+  },
+  "homepage": "https://github.com/Novellum-Framework/novellum-framework#readme",
+  "description": ""
+}
