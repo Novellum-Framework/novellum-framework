@@ -31,7 +31,7 @@ export class storyRoute {
     this.name = name
   }
 
-  renderVisualNovel() {
+  renderRoute() {
     return this.story
       .map(({ sender, text }) => `${sender}: ${text}`)
       .join('\n');

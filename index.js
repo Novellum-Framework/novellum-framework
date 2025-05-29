@@ -14,7 +14,7 @@ const initRoute = new storyRoute([{
         text: "go to forest"
     },
     {   
-        name: "gdf",
+        name: "joeRoute",
         text: "go with Joe"
     },
 ],
@@ -26,5 +26,24 @@ const forestRoute = new storyRoute([{
 }],
 [],
 "forestRoute")
+const joeRoute = new storyRoute([{
+    sender: "god",
+    text: "you are save too"
+}],
+[],
+"joeRoute"
+)
+
 const app = new Novela(initRoute)
-console.log(app.request())
+
+async function runApp() {
+    const input = await app.request(); 
+  
+    if (input == '1') {
+      app.changeRoute(forestRoute);
+    } else {
+      app.changeRoute(joeRoute);
+    }
+    console.log(app.currentyRoute)
+  }
+  runApp()
